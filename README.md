@@ -46,6 +46,14 @@ Acesse **`http://localhost:5119/scalar/v1`**.
 
 **Sobre o banco:** tanto rodando local quanto via Docker, o Postgres escuta na porta `5432`, é o mesmo banco/mesma configuração nos dois cenários, a menos que você já tenha algo rodando nessa porta localmente e precise ajustar.
 
+Credenciais (só pra esse ambiente de teste, sem relação com produção):
+- Banco: `sinistros_db`
+- Usuário: `postgres`
+- Senha: `postgres`
+
+Servem tanto pra rodar via Docker quanto local, e são úteis se quiser conectar direto no banco por alguma ferramenta (DBeaver, pgAdmin, etc.) pra conferir os dados do seed sem passar pela API.
+
+
 **Sobre configuração:** existe só um `appsettings.json`, não tem `appsettings.Development.json` nem separação de ambiente. Pra um teste de 3 dias, achei desnecessário simular múltiplos ambientes que não existem de verdade aqui.
 
 **Sobre segurança:** a API não tem autenticação/autorização. Não fazia parte do escopo pedido, e adicionar isso só pra ter seria complexidade sem propósito real no contexto do teste.
