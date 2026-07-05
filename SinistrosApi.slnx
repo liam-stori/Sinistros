@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="SinistrosApi.Api/SinistrosApi.Api.csproj" />
+  <Project Path="SinistrosApi.Application/SinistrosApi.Application.csproj" />
+  <Project Path="SinistrosApi.Domain/SinistrosApi.Domain.csproj" />
+  <Project Path="SinistrosApi.Infrastructure/SinistrosApi.Infrastructure.csproj" />
+  <Project Path="SinistrosApi.Testes/SinistrosApi.Testes.csproj" />
+</Solution>
