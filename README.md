@@ -53,6 +53,11 @@ Credenciais:
 
 Servem tanto pra rodar via Docker quanto local, e são úteis se quiser conectar direto no banco por alguma ferramenta (DBeaver, pgAdmin, etc.) pra conferir os dados do seed sem passar pela API.
 
+**Para facilitar o teste em `POST /sinistros`:** você precisa de um `ApoliceId` cuja apólice esteja com status `Ativa`, não existe endpoint pra listar apólices (fora do escopo do desafio), e o `GET /sinistros` retorna o `apoliceId` do sinistro mas não o status atual da apólice vinculada, então nem todo `apoliceId` retornado ali necessariamente ainda está ativo. Pra garantir, a forma mais simples é consultar direto no banco:
+
+```sql
+SELECT id, numero_apolice, status FROM apolices WHERE status = 'Ativa' LIMIT 5;
+```
 
 **Sobre configuração:** existe só um `appsettings.json`, não tem `appsettings.Development.json` nem separação de ambiente. Pra um teste de 3 dias, achei desnecessário simular múltiplos ambientes que não existem de verdade aqui.
 
