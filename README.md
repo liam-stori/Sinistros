@@ -6,8 +6,11 @@ API RESTful para gestão de sinistros de seguros, desenvolvida como desafio téc
 
 Primeiro, clona o repositório e entra na pasta:
 
-```bash
+```
 git clone https://github.com/liam-stori/Sinistros.git
+```
+
+```
 cd Sinistros
 ```
 
@@ -15,7 +18,7 @@ cd Sinistros
 
 Só precisa de **Docker** e **Docker Compose** instalados. Não precisa ter .NET, PostgreSQL ou qualquer SDK na máquina, mesmo o banco é criado e populado automaticamente, sem precisar rodar nada manualmente.
 
-```bash
+```
 docker-compose up --build
 ```
 
@@ -25,7 +28,7 @@ Acesse **`http://localhost:7070/scalar/v1`** — é por ali que tudo é testado.
 
 Pra derrubar tudo e deletar do Docker (incluindo o volume do banco, resetando os dados):
 
-```bash
+```
 docker-compose down -v
 ```
 
@@ -35,7 +38,7 @@ Precisa ter o **.NET 10 SDK** e o **PostgreSQL** instalados na máquina. Assim c
 
 PostgreSQL usado nos testes: versão **17.10**, disponível em [enterprisedb.com/downloads/postgres-postgresql-downloads](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Não testei em outras versões — se tiver algum problema de compatibilidade, a recomendação é seguir pelo Docker, que já elimina essa variável.
 
-```bash
+```
 dotnet run --project SinistrosApi.Api
 ```
 
