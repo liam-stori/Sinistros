@@ -46,7 +46,7 @@ Acesse **`http://localhost:5119/scalar/v1`**.
 
 **Sobre o banco:** tanto rodando local quanto via Docker, o Postgres escuta na porta `5432`, é o mesmo banco/mesma configuração nos dois cenários, a menos que você já tenha algo rodando nessa porta localmente e precise ajustar.
 
-Credenciais (só pra esse ambiente de teste, sem relação com produção):
+Credenciais:
 - Banco: `sinistros_db`
 - Usuário: `postgres`
 - Senha: `postgres`
